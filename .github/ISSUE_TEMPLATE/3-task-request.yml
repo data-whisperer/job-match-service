@@ -1,0 +1,65 @@
+name: "📝 Task"
+description: Create a general task or to-do item
+title: "[Task]: "
+labels: [task]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 📝 General Task
+        *Use this template to track a specific task or work item.*
+
+  - type: input
+    id: summary
+    attributes:
+      label: Task Summary
+      description: A short one-line summary of the task
+      placeholder: e.g., "Refactor API endpoint for better performance"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Description
+      description: Describe the scope of the task and what's expected
+      placeholder: |
+        What needs to be done?
+        Are there any specific files or modules affected?
+        Is this part of a larger goal?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Current Status
+      options:
+        - Not started
+        - In progress
+        - Blocked
+        - Completed
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Related Issues or Dependencies
+      description: Link to any other relevant issues, tasks, or PRs
+      placeholder: e.g., "Depends on #42 being completed first"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Use this space for anything else worth noting
+
