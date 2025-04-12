@@ -1,0 +1,61 @@
+name: "🚀 Feature request"
+description: Propose a new feature for this project
+title: "[Feature]: "
+labels: [enhancement]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Feature Request
+        *A clear and concise description of the feature proposal*
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: |
+        What problem does this feature aim to solve?
+        Why is it necessary for this project? 
+        Link to related GitHub issues if any.
+      placeholder: Explain the motivation behind this feature.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: |
+        Describe how you think the feature should work.
+        Include API changes, UI modifications, or architecture considerations.
+      placeholder: Describe your ideal solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: |
+        Have you considered other approaches? Why is this the preferred one?
+      placeholder: List any alternative solutions you've thought about.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: |
+        Add any other context, links, references, or screenshots here.
+      placeholder: Add links, screenshots, or references.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched for existing issues that may cover this feature.
+        - label: I have provided all necessary details for implementation.
+        - label: I am willing to implement this feature.
+
