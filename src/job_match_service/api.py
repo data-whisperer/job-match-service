@@ -1,7 +1,5 @@
 """
-Main entry point for the FastAPI application.
-
-This script initializes the FastAPI app, and starts the server.
+FastAPI application setup and route definitions.
 """
 
 from fastapi import FastAPI
@@ -14,8 +12,4 @@ async def root(message: str = "Hello World"):
 
 @app.get("/health")
 async def health():
-    return {"status": "ok"}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    return {"status": "ok"} 
