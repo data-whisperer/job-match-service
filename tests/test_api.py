@@ -6,7 +6,7 @@ from fastapi.testclient import TestClient
 from job_match_service.api import app
 
 # Initialize the test client correctly
-client = TestClient(app=app)
+client = TestClient(app)
 
 def test_root_endpoint():
     response = client.get("/")
